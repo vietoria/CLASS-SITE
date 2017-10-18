@@ -307,6 +307,103 @@ body {
 
 
 
+#eh { 
+    height: 350px; 
+    width: 350px; 
+    border: solid 1px #fff; 
+    overflow: hidden; }
+
+.ehtxt { 
+    height: 190px; 
+    width: 190px; 
+    padding: 80px; 
+    background: rgba(0,0,0,0.3); 
+    text-align: justify; 
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 7px; 
+    letter-spacing: 1px; 
+    font-weight: bold; 
+    line-height: 250%; 
+    text-transform: uppercase; 
+    color: #fff; 
+    overflow: hidden; 
+    position: relative; 
+    left: 0px; 
+    top: 0px; 
+    transition-: 0.7s all ease-in-out; 
+    -webkit-transition: 0.7s all ease-in-out; 
+    -moz-transition: 0.7s all ease-in-out; 
+    -o-transition: 0.7s all ease-in-out; 
+    -ms-transition: 0.7s all ease-in-out; }
+
+#eh:hover .ehtxt{ 
+    top: -350px; }
+
+.ehcriess {
+    height: 250px; 
+    width: 250px; 
+    padding: 50px; 
+    color: #000; 
+    background: #fff; 
+    position: relative; 
+    left: 0px; 
+    bottom: 0px; 
+    transition-: 0.7s all ease-in-out; 
+    -webkit-transition: 0.7s all ease-in-out; 
+    -moz-transition: 0.7s all ease-in-out; 
+    -o-transition: 0.7s all ease-in-out; 
+    -ms-transition: 0.7s all ease-in-out; 
+    padding: 50px; 
+    overflow: hidden; }
+
+.ehcries { 
+    height: 250px; 
+    width: 250px; 
+    text-align: justify; 
+    font-family: times; 
+    font-size: 9px; 
+    letter-spacing: 1px; 
+    line-height: 150%; 
+    text-transform: lowecase; 
+    overflow: auto; }
+
+.ehcries::-webkit-scrollbar { 
+    display: none; }
+
+#eh:hover .ehcriess { 
+    bottom: 350px; }
+
+.ehy { 
+    width: 65px; 
+    height: 65px; 
+    transform: rotate(-45deg);  
+    -webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg); 
+    -o-transform: rotate(-45deg); 
+    -ms-transform: rotate(-45deg); 
+    transition-: 0.6s all ease-in-out; 
+    -webkit-transition: 0.6s all ease-in-out; 
+    -moz-transition: 0.6s all ease-in-out; 
+    -o-transition: 0.6s all ease-in-out; 
+    -ms-transition: 0.6s all ease-in-out; 
+    border: 2px solid #fff; 
+    margin: -78px 0px 0px 60px; 
+    overflow: hidden; }
+
+.ehyy { 
+    width: 110px; 
+    height: 110px; 
+    transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg);   
+    -moz-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    margin: -22px; }
+
+.ehyy img { 
+    width: 100px; 
+    height: 100px; }
+
 
 
 
