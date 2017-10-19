@@ -2,6 +2,34 @@ body {
     height: auto;
 }
 
+.leftbutt a {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    text-decoration: none;
+}
+
+.rightbutt a {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-decoration: none;
+}
+
 .large {
     font-family: arial;
     font-size: 40px;
@@ -310,7 +338,9 @@ body {
     height: 350px; 
     width: 350px; 
     border: solid 1px #fff; 
-    overflow: hidden; }
+    overflow: hidden; 
+    margin-top: 10%;
+}
 
 .l4v1txt { 
     height: 190px; 
@@ -318,6 +348,7 @@ body {
     padding: 80px; 
     background: rgba(0,0,0,0.3); 
     text-align: justify; 
+    text-align-last: justify;
     font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
     font-size: 7px; 
     letter-spacing: 1px; 
@@ -347,6 +378,7 @@ body {
     position: relative; 
     left: 0px; 
     bottom: 0px; 
+    text-transform: lowercase;
     transition-: 0.7s all ease-in-out; 
     -webkit-transition: 0.7s all ease-in-out; 
     -moz-transition: 0.7s all ease-in-out; 
