@@ -765,8 +765,18 @@ b {
 }
 
 .lastflower {
-    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; font-weight: 700; font-size: 30px; color:#ccc; position: relative; margin-top: -20px; margin-left: 930px; letter-spacing: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 700; font-size: 30px; color:#ccc; position: 
+    relative; margin-top: -20px; margin-left: 930px;
+    -webkit-transition: all .5s ease-in-out;
 }
+
+.lastflower:hover {
+    -webkit-transform: rotate(420deg);
+}
+
 
 .rsvp {
     margin-top: 800px; margin-left: 500px;
@@ -775,6 +785,47 @@ b {
 .submitbox {
     text-align: center; width: 50px; margin-left: 245px; margin-top: 20px; padding: 3px; background-color: #ccc;
 }
+
+
+.firstlink {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-weight: 700; 
+    font-size: 30px; 
+    color:#ccc; 
+    position: relative; 
+    top:600px;
+    width: 100%; 
+    text-align: center; 
+    -webkit-transition: all .5s ease-in-out; /* transitions make any changes to the element happen over time */
+}
+
+.firstlink:hover {
+    -webkit-transform: rotate(720deg);
+}
+
+.linkthree {
+    -webkit-transition: all .5s ease-in-out;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.linkthree:hover {
+    -webkit-transform: rotate(720deg);
+
+}
+
+.linkfour {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none; position: relative; left: 40px; font-size: 180px; -webkit-transition: all .5s ease-in-out;
+}
+
+.linkfour:hover {
+    -webkit-transform: rotate(420deg);
+}
+
 
 </style>
     
@@ -794,7 +845,7 @@ b {
 
 <div class="wow fadeInDown" data-wow-delay="5s"><div style="position: relative; left: 0px; top:544px; z-index:60;  width: 80%; height:1px; background-color:#000;"></div></div>
 
-<div class="wow fadeInDown" data-wow-delay="6s"><a href="#two"><div style="font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; font-weight: 700; font-size: 30px; color:#ccc; position: relative; top:600px;width: 100%; text-align: center; letter-spacing: 15px;">❀</div></a></div>
+<div class="wow fadeInDown" data-wow-delay="6s"><a href="#two"><div class="firstlink">❀</div></a></div>
 
 <div style="height:680px;"></div>
 
@@ -802,7 +853,7 @@ b {
  "there are only two things that cultivate the sweetest flower of life <br>
  in blossoming prosperity: to have good fortune and a noble reputation. <br>
  do not seek to become zeus; you have everything, if a share of these <br>
- fine things comes to you. mortal aims befit mortal men." <a href="#three">❀</a>
+ fine things comes to you. mortal aims befit mortal men." <a href="#three"><div class="linkthree">❀</div></a>
 </div></div></div><p>
 
 
@@ -830,7 +881,7 @@ b {
 
 <div style="margin-left: 280px;"><table cellpadding="0" cellspacing="0">
 <td><div class="hollowsidebar">
-<div class="hollowsub">for the<br>greater<br>good <a href="#four"><font style="color: #000;">❀</font></a></div>
+<div class="hollowsub">for the<br>greater<br>good</div><a href="#four"><div class="linkfour">❀</div></a>
 </div>
 </td>
 
