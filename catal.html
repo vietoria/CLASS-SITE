@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>vietoria</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<link rel="stylesheet" href="animate.css-master/animate.min.css">
+
+
+<script src="WOW-master/dist/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+
+<script src="scrollup-master/dist/lib/jquery-1.11.1.min.js"></script>
+<script src="scrollup-master/dist/jquery.scrollUp.min.js"></script>
+
+<script>
+    $(function () {
+    $.scrollUp({
+        scrollName: 'scrollUp',      // Element ID
+        scrollDistance: 1000,         // Distance from top/bottom before showing element (px)
+        scrollFrom: 'top',           // 'top' or 'bottom'
+        scrollSpeed: 300,            // Speed back to top (ms)
+        easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+        animation: 'fade',           // Fade, slide, none
+        animationSpeed: 200,         // Animation speed (ms)
+        scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
+        scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
+        scrollText: true,            // Text for element, can contain HTML
+        scrollTitle: false,          // Set a custom <a> title if required.
+        scrollImg: false,            // Set true to use image
+        activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        zIndex: 2147483647           // Z-Index for the overlay
+    });
+});
+</script>
+
+<style> 
+
+
+body, html, * {
+    padding: 0px;
+    margin: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #e5d8b0;
+}
+
+b {
+    text-transform: uppercase;
+    color: #e5d8b0;
+}
+
+
+.landing {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    z-index: 999;
+}
+
+.landing h1 {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 40px;
+}
+
+.landing h2 {
+    position: relative;
+    margin-top: 29%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main {
+    position: relative;
+    margin-top: -10%;
+}
+
+
+.project {
+    position: relative;
+    width: 850px;
+    height: 500px;
+    left: 10%;
+    margin-bottom: 10%;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 9px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    color: #fff;
+    padding-bottom: 200px;
+
+}
+
+.project img {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    margin-bottom: 10%;
+}
+
+.projecttxt {
+    width: 200px;
+    height: 400px;
+    position: relative;
+    left: 42%;
+    top: -110%;
+    padding: 10px;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 9px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 200%;
+}
+
+
+.projecttxt h3 {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #e5d8b0;
+    background-color: #fff;
+    padding: 5px 5px 5px 8px;
+    margin-bottom: 5%;
+}
+
+
+.projectnmbr b {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 55px;
+    letter-spacing: 0px;
+    color: #fff;
+    padding: 25px;
+    margin-bottom: 5%; 
+    border: solid 1px #fff;
+    position: relative;
+    left: 35%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+#sideimage {
+    position: fixed;
+    left: 80%;
+    top: 20%;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+#sideimage img {
+    width: 220px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+#sidebar {
+    position: fixed;
+    width: 45%;
+    vertical-align: middle;
+    padding-right: 160px;
+    background-color: rgba(0, 0, 0, 0);
+    left: 55%;
+    top: 30%;
+    z-index: 997;
+
+}
+
+#sidebox {
+    width: 210px;
+    position: relative;
+    margin: 30px auto 0;
+    border: 1px solid #fff;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#sideshadow {
+    position: fixed;
+    border: 1px solid #fff;
+    width: 145px;
+    height: auto;
+    margin: -15px 0 8px -15px;
+    padding: 40px 25px 25px 40px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+#title {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #e5d8b0;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 5%;
+}
+
+#description {
+    margin-bottom: 10px;
+    letter-spacing: 0px;
+    text-transform: none;
+    line-height: 1.4em;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 9px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    line-height: 200%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+#nav {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    width: 70px;
+
+}
+#nav a:hover {
+    text-shadow: 0 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+ul {
+    padding-top: 10px;
+    margin: 0 15px;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+ 
+ul li:before {
+    margin-left: -15px;    
+    position:absolute;    
+    content: '×';
+    font-size: 8px);
+    opacity: 0.7;
+    vertical-align: baseline!important;    
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.small {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 9px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    line-height: 200%;
+    background-color: rgba(0, 0, 0, 0);
+    width: auto;
+}
+
+
+</style>
+    
+</head>
+<body>
+
+
+
+<div class="landing"><p><h1>vietoria</h1></p><p><h2>subtitle</h2></p></div>
+
+<div class="main">
+
+
+
+
+
+<div id="sideimage"><img src="https://placeholdit.co//i/220x400?&bg=ccc&fc=e5d8b0"></div>
+</div>
+
+<div id="sidebar">
+<div id="sidebox">
+<div id="sideshadow">
+<div id="title">home.</div>
+<div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque justo erat, lacinia scelerisque libero aliquam non. Sed ligula augue, ullamcorper a lobortis ut, aliquet ut urna. </div>
+<ul id="nav" class="small">
+<li><a href="{text:Link One URL}">e-mail</a></li>
+<li><a href="{text:Link Two URL}">instagram</a></li>
+<li><a href="{text:Link Three URL}">twitter</a></li>
+</ul>
+
+
+</div>
+</div>
+</div>
+
+
+
+<div class="project"><div class="projectnmbr"><b>01</b></div>
+<img src="https://placeholdit.co//i/350x500?&bg=ccc&fc=e5d8b0">
+<div class="projecttxt"><h3>project name</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque justo erat, lacinia scelerisque libero aliquam non. Sed ligula augue, ullamcorper a lobortis ut, aliquet ut urna. Ut sit amet ante pretium, consequat quam a, convallis enim. Sed purus velit, varius quis tincidunt at, ornare non ex. Mauris malesuada velit at nisl pharetra mattis. Sed nec erat nunc. Donec nec posuere sem. Sed sed arcu vel erat volutpat ullamcorper. Curabitur tincidunt ante id tellus scelerisque commodo.</div>
+</div>
+
+<div class="project"><div class="projectnmbr"><b>02</b></div>
+<img src="https://placeholdit.co//i/350x500?&bg=ccc&fc=e5d8b0">
+<div class="projecttxt"><h3>project name</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque justo erat, lacinia scelerisque libero aliquam non. Sed ligula augue, ullamcorper a lobortis ut, aliquet ut urna. Ut sit amet ante pretium, consequat quam a, convallis enim. Sed purus velit, varius quis tincidunt at, ornare non ex. Mauris malesuada velit at nisl pharetra mattis. Sed nec erat nunc. Donec nec posuere sem. Sed sed arcu vel erat volutpat ullamcorper. Curabitur tincidunt ante id tellus scelerisque commodo.</div>
+</div>
+
+<div class="project"><div class="projectnmbr"><b>03</b></div>
+<img src="https://placeholdit.co//i/350x500?&bg=ccc&fc=e5d8b0">
+<div class="projecttxt"><h3>project name</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque justo erat, lacinia scelerisque libero aliquam non. Sed ligula augue, ullamcorper a lobortis ut, aliquet ut urna. Ut sit amet ante pretium, consequat quam a, convallis enim. Sed purus velit, varius quis tincidunt at, ornare non ex. Mauris malesuada velit at nisl pharetra mattis. Sed nec erat nunc. Donec nec posuere sem. Sed sed arcu vel erat volutpat ullamcorper. Curabitur tincidunt ante id tellus scelerisque commodo.</div>
+</div>
+
+<div class="project"><div class="projectnmbr"><b>04</b></div>
+<img src="https://placeholdit.co//i/350x500?&bg=ccc&fc=e5d8b0">
+<div class="projecttxt"><h3>project name</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque justo erat, lacinia scelerisque libero aliquam non. Sed ligula augue, ullamcorper a lobortis ut, aliquet ut urna. Ut sit amet ante pretium, consequat quam a, convallis enim. Sed purus velit, varius quis tincidunt at, ornare non ex. Mauris malesuada velit at nisl pharetra mattis. Sed nec erat nunc. Donec nec posuere sem. Sed sed arcu vel erat volutpat ullamcorper. Curabitur tincidunt ante id tellus scelerisque commodo.</div>
+</div>
+
+</div>
+
+
+</body>
+</html>
