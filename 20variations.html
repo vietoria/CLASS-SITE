@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VICTORIA'S CLASS SITE</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+
+<style> 
+    
+body, html, * {
+    padding: 0;
+    margin: 0;
+}
+  
+ul {
+    /*list-style: none;*/
+    padding: 40px;
+    }
+
+a{
+    font-size: 30px;
+/*    text-transform: uppercase;
+*/
+}
+
+a:visited {
+    color: gray;
+}
+
+a:active {
+    color: red;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+color: red;
+}
+
+
+#red {
+    color: red;
+}
+
+.blue {
+     color: blue;
+}
+
+
+
+
+.AEAPcontainer {
+ margin: 10px; 
+ height: auto;
+ width: auto;
+}
+
+.AEAPtabs {
+margin: 0px auto; 
+position: relative;
+width: 300px; 
+height:  250px;
+padding: 5px; 
+}
+
+.AEAPtab {
+ float: left; /* CHANGE TO DISPLAY:BLOCK FOR VERTICAL TABS */
+}
+
+/* position your tab labels in here - also use margins to space your labels - you kind of have to eye until it's centered bc the math with tabs gets confusing */
+
+.AEAPtab label {
+ display: block; /* this lets you fix the label dimensions */
+ width: 20px;
+ height: 20px;
+ margin: 0px;
+ position: relative;
+ left: -80px;
+ top: 150px;
+ z-index: 3;
+ font-size: 8px;
+}
+
+.AEAPtab input[type=radio]:checked ~ label {
+ color: #ccc;
+ z-index: 2;
+}
+
+.AEAPtab input[type=radio] {
+ display: none; /* DON'T EDIT */
+}
+
+/* if you want tab transitions they go here */
+
+.AEAPcontent {
+position: absolute;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+background: white;
+padding: 5px;
+width: 300px; 
+height: 250px; 
+background-color: #fff;
+opacity: 0; 
+-webkit-transition-duration: .8s; 
+-moz-transition-duration: .8s; 
+-o-transition-duration: .8s;}
+
+/* if you want tab transitions they also go here */
+.AEAPtab input[type=radio]:checked ~ label ~ .AEAPcontent {
+ z-index: 1;
+ opacity: 1;
+}
+
+
+
+
+#AEONE { 
+    width: 300px; }
+
+#AEONE img { 
+    float: left; 
+    height: 70px; 
+    width: 70px;  }
+
+#AEONE .AEONEspace { 
+    float: right; 
+    width: 220px; }
+
+
+#AEONE .AEONEtext { 
+    background-color: #000; 
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 7px; 
+    font-weight: bold;  
+    text-transform: uppercase; 
+    padding: 5px; 
+    letter-spacing: 2px; 
+    color: #fff; 
+    text-align: left;
+    line-height: 120%; }
+
+#AEONE .AEONEtext b { 
+    color: #962424; }
+
+.AEONEquote a { 
+    height: 250px; 
+    width: 170px; 
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 7px; 
+    font-weight: bold;  
+    text-transform: uppercase; 
+    padding: 6px; 
+    letter-spacing: 2px; 
+    color: #000; 
+    text-align: justify; }
+
+.AEONEquote a:hover {
+    color: #962424;
+    -webkit-transition-duration: .4s; 
+-moz-transition-duration: .4s; 
+-o-transition-duration: .4s;
+}
+
+
+
+.AEapptext ::-webkit-scrollbar { width:3px; } 
+.AEapptext ::-webkit-scrollbar-track { background:#fff; }  
+.AEapptext ::-webkit-scrollbar-thumb { background:#9f328c; }
+
+.AEappbase { 
+    width: 500px; 
+    height: 530px; 
+    background-color: #fff; 
+    border: 4px double #f1f1f1;
+    margin-top: 5%;}
+
+.AEappbase img { 
+    width: 500px; 
+    height: 200px; }
+
+.AEappgroup img { 
+    position: relative; 
+    margin-top: -25px; 
+    border-radius: 100px; 
+    width: 50px; 
+    height: 50px; 
+    z-index: 1;}
+
+
+.AEappstats { 
+    width: 120px; 
+    height: 290px; 
+    top: 0px; }
+
+.AEappstats p { 
+    width: 100px; 
+    border-bottom: 2px solid #000; 
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 7px; 
+    text-transform: uppercase; 
+    padding-top: 10px; 
+    text-align: right; 
+    letter-spacing: 2px; 
+    color: #000; }
+
+.AEapptext { 
+    width: 220px; 
+    height: 230px; 
+    text-align: justify; 
+    letter-spacing: 0px; 
+    font-size: 9px; 
+    line-height: 140%; 
+    overflow: auto; 
+    padding-left: 10px; 
+    padding-right: 10px; }
+
+.AEprompt { 
+    width: 220px; 
+    text-align: right; 
+    font-family: courier new; 
+    font-size: 10px; 
+    color: #000; 
+    padding-bottom: 5px; 
+    border-bottom: 1px solid #000; }
+
+
+
+
+</style>
+    
+</head>
+<body>
+
+
+
+
+
+
+
+<center>
+<div class="AEappbase">
+
+<img src="http://placehold.it/500x200/000/000">
+
+<div class="AEappgroup"><img src="http://placehold.it/50/962424/962424"></div>
+
+<div style="height:15px;"></div>
+
+<table cellpadding="0" cellspacing="0"><tr><td>
+<div class="AEappstats">
+<p>wilfred</p>
+<p>owen's</p>
+<p>dulce</p>
+<p>et</p>
+<p>decorum</p>
+<p>est</p>
+
+</div></td><td>
+
+
+<div class="AEAPcontainer">
+
+<div class="AEAPtabs">
+
+
+<div class="AEAPtab">
+<input type="radio" id="AEAPtab-1" name="AEAPtab-group-1" checked>
+<label for="AEAPtab-1"> ✕ </label>
+<div class="AEAPcontent">
+
+<div id="AEONE">
+
+<p><span class="AEONEtext"><b>pt i ///</b> poetry assignment</span></p><br>
+<p><span class="AEONEtext">VERSIONS ONE TO FIVE </span></p><br>
+
+
+<center><div class="AEONEquote"><div style="height:20px;"></div>
+<a href="Starter%20Kit%20Poem/level1_v1.html" target="blank">Link 1</a></li>
+<a href="Starter%20Kit%20Poem/level1_v2.html" target="blank">Link 2</a>
+   <a href="Starter%20Kit%20Poem/level1_v3.html" target="blank">Link 3</a>
+    <a href="Starter%20Kit%20Poem/level1_v4.html" target="blank">Link 4</a>
+   <a href="Starter%20Kit%20Poem/level1_v5.html" target="blank">Link 5</a><br>
+
+
+</div></center>
+
+
+</div>
+</div>
+
+
+<div class="AEAPtab">
+<input type="radio" id="AEAPtab-2" name="AEAPtab-group-1">
+<label for="AEAPtab-2"> ✕ </label>
+<div class="AEAPcontent">
+
+<div id="AEONE">
+
+<p><span class="AEONEtext"><b>pt ii ///</b> poetry assignment</span></p><br>
+<p><span class="AEONEtext">VERSIONS SIX TO TEN </span></p><br>
+
+
+<center><div class="AEONEquote"><div style="height:20px;"></div>
+   <a href="Starter%20Kit%20Poem/level2_v1.html" target="blank">Link 6</a>
+    <a href="Starter%20Kit%20Poem/level2_v2.html" target="blank">Link 7</a>
+   <a href="Starter%20Kit%20Poem/level2_v3.html" target="blank">Link 8</a>
+    <a href="Starter%20Kit%20Poem/level2_v4.html" target="blank">Link 9</a>
+    <a href="Starter%20Kit%20Poem/level2_v5.html" target="blank">Link 10</a>
+</div></center>
+
+</div>
+</div>
+
+
+<div class="AEAPtab">
+<input type="radio" id="AEAPtab-3" name="AEAPtab-group-1">
+<label for="AEAPtab-3"> ✕ </label>
+<div class="AEAPcontent">
+
+<div id="AEONE">
+
+<p><span class="AEONEtext"><b>pt iii ///</b> poetry assignment</span></p><br>
+<p><span class="AEONEtext">VERSIONS ELEVEN TO FIFTEEN </span></p><br>
+
+
+<center><div class="AEONEquote"><div style="height:20px;"></div>
+      <a href="Starter%20Kit%20Poem/level3_v1.html" target="blank">Link 11</a>
+    <a href="Starter%20Kit%20Poem/level3_v2.html" target="blank">Link 12</a>
+    <a href="Starter%20Kit%20Poem/level3_v3.html" target="blank">Link 13</a>
+   <a href="Starter%20Kit%20Poem/level3_v4.html" target="blank">Link 14</a>
+    <a href="Starter%20Kit%20Poem/level3_v5.html" target="blank">Link 15</a><br>
+
+</div></center>
+
+</div>
+</div>
+
+
+<div class="AEAPtab">
+<input type="radio" id="AEAPtab-4" name="AEAPtab-group-1">
+<label for="AEAPtab-4"> ✕ </label>
+<div class="AEAPcontent">
+
+<div id="AEONE">
+
+<p><span class="AEONEtext"><b>pt iv ///</b> poetry assignment</span></p><br>
+<p><span class="AEONEtext">VERSIONS SIXTEEN TO TWENTY </span></p><br>
+
+<center><div class="AEONEquote"><div style="height:20px;"></div>
+
+    <a href="Starter%20Kit%20Poem/level4_v1.html" target="blank">Link 16</a>
+    <a href="Starter%20Kit%20Poem/level4_v2.html" target="blank">Link 17</a>
+    <a href="Starter%20Kit%20Poem/level4_v3.html" target="blank">Link 18</a>
+    <a href="Starter%20Kit%20Poem/level4_v4.html" target="blank">Link 19</a>
+    <a href="Starter%20Kit%20Poem/level4_v5.html" target="blank">Link 20</a>
+
+</div></center>
+
+
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+</td></tr></table>
+</div></center>
+
+
+
+</body>
+</html>

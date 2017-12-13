@@ -43,6 +43,21 @@ $(document).ready(function(){
 </script>
 
 
+<script type="text/javascript">
+    $(function(){
+    $(window).scroll(function() { 
+        if ($(this).scrollTop() < 99) { 
+            $("#sideful:hidden").css('visibility','visible');   
+            $("#sideful:hidden").fadeIn('slow');  
+        } 
+        else {     
+            $("#sideful:visible").fadeOut("slow"); 
+        }  
+    });
+});
+</script>
+
+
 
 
 <script src="scrollup-master/dist/lib/jquery-1.11.1.min.js"></script>
@@ -81,6 +96,7 @@ body, html, * {
     left: 0;
     background-color: #000;
     color: #fff;
+    b
 }
 
 a {
@@ -108,6 +124,7 @@ b {
     color: #fff;
     font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
     font-size: 40px;
+    letter-spacing: 3px;
 }
 
 .landing h2 {
@@ -121,6 +138,124 @@ b {
     letter-spacing: 2px;
 }
 
+
+#sideimage {
+    position: fixed;
+    left: 80%;
+    top: 25%;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+#sideimage img {
+    width: 220px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+#sidebar {
+    position: fixed;
+    width: 45%;
+    padding-right: 160px;
+    background-color: rgba(0, 0, 0, 0);
+    left: 55%;
+    top: 30%;
+    z-index: 997;
+}
+
+#sidebox {
+    width: 210px;
+    position: relative;
+    margin: 30px auto 0;
+    border: 1px solid #fff;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#sideshadow {
+    position: fixed;
+    border: 1px solid #fff;
+    width: 145px;
+    height: auto;
+    margin: -15px 0 8px -15px;
+    padding: 40px 25px 25px 40px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+#sideful {
+    visibility: hidden;
+}
+
+#title {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #e5d8b0;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 5%;
+    
+}
+
+#description {
+    margin-bottom: 10px;
+    letter-spacing: 0px;
+    text-transform: none;
+    line-height: 1.4em;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 9px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    line-height: 200%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+#nav {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    width: 70px;
+
+}
+#nav a:hover {
+    text-shadow: 0 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+ul {
+    padding-top: 10px;
+    margin: 0 15px;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+ 
+ul li:before {
+    margin-left: -15px;    
+    position:absolute;    
+    content: '×';
+    font-size: 8px);
+    opacity: 0.7;
+    vertical-align: baseline!important;    
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.small {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 9px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    line-height: 200%;
+    background-color: rgba(0, 0, 0, 0);
+    width: auto;
+}
+
 .main {
     position: relative;
     margin-top: -10%;
@@ -132,7 +267,7 @@ b {
     width: 850px;
     height: 500px;
     left: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 10%; 
     font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
     font-size: 9px;
     text-transform: lowercase;
@@ -192,120 +327,204 @@ b {
 }
 
 
-#sideimage {
-    position: fixed;
-    left: 80%;
-    top: 20%;
-    background-color: rgba(0, 0, 0, 0);
+.project2 {
+    position: relative;
+    width: 850px;
+    height: 500px;
+    left: 10%;
+    margin-bottom: 10%; 
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 9px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    color: #fff;
+    padding-bottom: 20px;
 
 }
 
-#sideimage img {
-    width: 220px;
+.project2 img {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    top: 0%;
+    left: 70%;
+}
+
+.projecttxt2 {
+    width: 230px;
     height: 400px;
-    background-color: rgba(0, 0, 0, 0);
-
-}
-
-#sidebar {
-    position: fixed;
-    width: 45%;
-    vertical-align: middle;
-    padding-right: 160px;
-    background-color: rgba(0, 0, 0, 0);
-    left: 55%;
-    top: 30%;
-    z-index: 997;
-
-}
-
-#sidebox {
-    width: 210px;
     position: relative;
-    margin: 30px auto 0;
-    border: 1px solid #fff;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0);
+    left: 33%;
+    top: -62%;
+    padding: 10px;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 9px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 200%;
 }
 
-#sideshadow {
-    position: fixed;
-    border: 1px solid #fff;
-    width: 145px;
-    height: auto;
-    margin: -15px 0 8px -15px;
-    padding: 40px 25px 25px 40px;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
 
-}
-
-#title {
+.projecttxt2 h3 {
     font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #e5d8b0;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #fff;
+    padding: 5px 5px 5px 8px;
     margin-bottom: 5%;
 }
 
-#description {
-    margin-bottom: 10px;
+
+.projectnmbr2 b {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 55px;
     letter-spacing: 0px;
-    text-transform: none;
-    line-height: 1.4em;
+    color: #fff;
+    padding: 25px;
+    margin-bottom: 5%; 
+    border: solid 1px #fff;
+    position: relative;
+    left: 25%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.project3 {
+    position: relative;
+    width: 850px;
+    height: 500px;
+    left: 10%;
+    margin-bottom: 10%; 
     font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
     font-size: 9px;
     text-transform: lowercase;
     letter-spacing: 1px;
-    line-height: 200%;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0);
-
-}
-#nav {
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff;
-    width: 70px;
-
-}
-#nav a:hover {
-    text-shadow: 0 0;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0);
+    padding-bottom: 300px;
 
 }
 
-ul {
-    padding-top: 10px;
-    margin: 0 15px;
-    list-style-type: none;
-    background-color: rgba(0, 0, 0, 0);
-
-}
- 
-ul li:before {
-    margin-left: -15px;    
-    position:absolute;    
-    content: '×';
-    font-size: 8px);
-    opacity: 0.7;
-    vertical-align: baseline!important;    
-    background-color: rgba(0, 0, 0, 0);
-
+.project3 img {
+    position: relative;
+    width: 900px;
+    height: 600px;
+    top: 0%;
+    left: -30%;
 }
 
-.small {
+.projecttxt3 {
+    width: 230px;
+    height: 400px;
+    position: relative;
+    left: 70%;
+    top: -113%;
+    padding: 10px;
     font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
     font-size: 9px;
     text-transform: lowercase;
     letter-spacing: 1px;
+    color: #fff;
     line-height: 200%;
     background-color: rgba(0, 0, 0, 0);
-    width: auto;
+
 }
 
+
+.projecttxt3 h3 {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #e5d8b0;
+    background-color: #fff;
+    padding: 5px 5px 5px 8px;
+    margin-bottom: 5%;
+}
+
+
+.projectnmbr3 b {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 55px;
+    letter-spacing: 0px;
+    color: #fff;
+    padding: 25px;
+    border: solid 1px #fff;
+    position: relative;
+    left: 78%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.project4 {
+    position: relative;
+    width: 850px;
+    height: 500px;
+    left: 10%;
+    margin-bottom: 10%; 
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 9px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    color: #fff;
+    padding-bottom: 100px;
+
+}
+
+.project4 img {
+    position: relative;
+    width: 200px;
+    height: 450px;
+    top: 0%;
+    left: 280%;
+}
+
+.projecttxt4 {
+    width: 130px;
+    height: 400px;
+    position: relative;
+    left: 48%;
+    top: -85%;
+    padding: 10px;
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 9px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 200%;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+
+.projecttxt4 h3 {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #e5d8b0;
+    background-color: #fff;
+    padding: 5px 5px 5px 8px;
+    margin-bottom: 5%;
+}
+
+
+.projectnmbr4 b {
+    font-family: 'Roboto', pt sans, lucida sans, arial, sans-serif; 
+    font-size: 55px;
+    letter-spacing: 0px;
+    color: #fff;
+    padding: 25px;
+    border: solid 1px #fff;
+    position: relative;
+    left: 58%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0);
+}
 
 </style>
     
@@ -314,54 +533,106 @@ ul li:before {
 
 
 
-<div class="landing"><p><h1>vietoria</h1></p><p><h2>subtitle</h2></p></div>
+<div class="landing"><p><h1>vietoria</h1></p><p><h2>a work in progress</h2></p></div>
 
 <div class="main">
 
 
 
 
-
-<div id="sideimage"><img src="https://placeholdit.co//i/220x400?&bg=ccc&fc=e5d8b0"></div>
-</div>
+<div id="sideful">
+<div id="sideimage"><img src="https://placeholdit.co//i/220x400?&bg=e5d8b0&fc=e5d8b0"></div>
 
 <div id="sidebar">
 <div id="sidebox">
 <div id="sideshadow">
-<div id="title">home.</div>
-<div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque justo erat, lacinia scelerisque libero aliquam non. Sed ligula augue, ullamcorper a lobortis ut, aliquet ut urna. </div>
+<div id="title">HELLO.</div>
+<div id="description">victoria lam. nineteen and tired. from honolulu, hawaii, currently studying in nyc at the eugene lang college of liberal arts.</div>
 <ul id="nav" class="small">
-<li><a href="{text:Link One URL}">e-mail</a></li>
-<li><a href="{text:Link Two URL}">instagram</a></li>
-<li><a href="{text:Link Three URL}">twitter</a></li>
+<li><a href="mailto:vietoria.lam@gmail.com">e-mail</a></li>
+<li><a href="https://www.instagram.com/vietoria/">instagram</a></li>
+<li><a href="https://twitter.com/vietorialam">twitter</a></li>
 </ul>
 
 
 </div>
 </div>
 </div>
-
+</div>
 
 
 <div class="project"><div class="projectnmbr"><b>01</b></div>
-<img src="https://placeholdit.co//i/350x500?&bg=ccc&fc=e5d8b0">
-<div class="projecttxt"><h3>project name</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque justo erat, lacinia scelerisque libero aliquam non. Sed ligula augue, ullamcorper a lobortis ut, aliquet ut urna. Ut sit amet ante pretium, consequat quam a, convallis enim. Sed purus velit, varius quis tincidunt at, ornare non ex. Mauris malesuada velit at nisl pharetra mattis. Sed nec erat nunc. Donec nec posuere sem. Sed sed arcu vel erat volutpat ullamcorper. Curabitur tincidunt ante id tellus scelerisque commodo.</div>
+<a href="https://mssdcnnct.tumblr.com"><img src="http://i66.tinypic.com/2wf4f2t.jpg"></a>
+<div class="projecttxt"><a href="https://mssdcnnct.tumblr.com"><h3>republish a text</h3></a>this project is a compiled list of every instance in which the character sybil vane is described and pasted into various craigslist listings in the missed connection's section. the object was to see if any individuals would project themselves onto these descriptions of a fictional character and respond to the ads, which were inconspicuously labeled to fit the contemporary time. </div>
 </div>
 
-<div class="project"><div class="projectnmbr"><b>02</b></div>
-<img src="https://placeholdit.co//i/350x500?&bg=ccc&fc=e5d8b0">
-<div class="projecttxt"><h3>project name</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque justo erat, lacinia scelerisque libero aliquam non. Sed ligula augue, ullamcorper a lobortis ut, aliquet ut urna. Ut sit amet ante pretium, consequat quam a, convallis enim. Sed purus velit, varius quis tincidunt at, ornare non ex. Mauris malesuada velit at nisl pharetra mattis. Sed nec erat nunc. Donec nec posuere sem. Sed sed arcu vel erat volutpat ullamcorper. Curabitur tincidunt ante id tellus scelerisque commodo.</div>
+<div class="project2"><div class="projectnmbr2"><b>02</b></div>
+<a href="20variations.html"><img src="http://i68.tinypic.com/ndwhf6.jpg"></a>
+<div class="projecttxt2"><a href="20variations.html"><h3>twenty variations</h3></a>wilfred owen's poem, dulce et decorum est, is reformatted twenty different times. every five versions operates under certain constraints, the simplest and strictest restraints at versions one through five, the most unregulated in versions fifteen to twenty. </div>
 </div>
 
-<div class="project"><div class="projectnmbr"><b>03</b></div>
-<img src="https://placeholdit.co//i/350x500?&bg=ccc&fc=e5d8b0">
-<div class="projecttxt"><h3>project name</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque justo erat, lacinia scelerisque libero aliquam non. Sed ligula augue, ullamcorper a lobortis ut, aliquet ut urna. Ut sit amet ante pretium, consequat quam a, convallis enim. Sed purus velit, varius quis tincidunt at, ornare non ex. Mauris malesuada velit at nisl pharetra mattis. Sed nec erat nunc. Donec nec posuere sem. Sed sed arcu vel erat volutpat ullamcorper. Curabitur tincidunt ante id tellus scelerisque commodo.</div>
+<div class="project3"><div class="projectnmbr3"><b>03</b></div>
+<a href="EVENT%20MICROSITE/microsite.html"><img src="http://i67.tinypic.com/ir7syv.jpg"></a>
+<div class="projecttxt3"><a href="EVENT%20MICROSITE/microsite.html"><h3>event microsite</h3></a>this is an event invitation for a fictional brand, the convoluted construction of which explores themes of capitalism, commodification, and cooptation. </div>
 </div>
 
-<div class="project"><div class="projectnmbr"><b>04</b></div>
-<img src="https://placeholdit.co//i/350x500?&bg=ccc&fc=e5d8b0">
-<div class="projecttxt"><h3>project name</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque justo erat, lacinia scelerisque libero aliquam non. Sed ligula augue, ullamcorper a lobortis ut, aliquet ut urna. Ut sit amet ante pretium, consequat quam a, convallis enim. Sed purus velit, varius quis tincidunt at, ornare non ex. Mauris malesuada velit at nisl pharetra mattis. Sed nec erat nunc. Donec nec posuere sem. Sed sed arcu vel erat volutpat ullamcorper. Curabitur tincidunt ante id tellus scelerisque commodo.</div>
+<div class="project4"><div class="projectnmbr4"><b>04</b></div>
+<a href="screenshot.html"><table cellspacing="5" cellpadding="0">
+<tr><td><img src="http://i66.tinypic.com/330z5h4.jpg"></td><td><img src="http://i63.tinypic.com/2m4vb5u.jpg"></td><td><img src="http://i65.tinypic.com/118myhw.jpg"></td></tr></table></a>
+
+
+<div class="projecttxt4"><a href="screenshot.html"><h3>screenshot photography</h3></a>this is a series of fifteen screenshots taken over the course of sixteen weeks. some explore narrative construction through the combination of different assets (i.e. reading a sentence across several tab titles), while others are minimalist stagings of mac workspaces. others also invoke the creation of collages and juxtaposing certain text and images or evaluating a context. </div>
 </div>
+
+
+<div class="project3"><div class="projectnmbr3"><b>05</b></div>
+<a href="squares:boxes%20starter%20kit/index3.html"><img src="http://i63.tinypic.com/63srix.jpg"></a>
+<div class="projecttxt3"><a href="squares:boxes%20starter%20kit/index3.html"><h3>malevich's boxes</h3></a>a guy made some art out of using only boxes and i tried to do it too! here are my four versions! <a href="squares:boxes%20starter%20kit/index.html">one,</a> <a href="squares:boxes%20starter%20kit/index2.html">two,</a> <a href="squares:boxes%20starter%20kit/index3.html">three,</a> and <a href="squares:boxes%20starter%20kit/index4.html">four.</a> </div>
+</div>
+
+
+<div class="project2"><div class="projectnmbr2"><b>06</b></div>
+<a href="responsive%20page/starter%20kit/index.html"><img src="http://i65.tinypic.com/wgqa94.jpg"></a>
+<div class="projecttxt2"><a href="responsive%20page/starter%20kit/index.html"><h3>responsive page</h3></a>this is a responsive cry for help.</div>
+</div>
+
+
+<div class="project"><div class="projectnmbr"><b>07</b></div>
+<a href="starter-kit1/index.html"><img src="http://i67.tinypic.com/f1z8cx.jpg"></a>
+<div class="projecttxt"><a href="starter-kit1/index.html"><h3>hover states</h3></a>certain things happen if you hover over specific things. this is not an aesthetic assignment but merely an exercise in hovers. </div>
+</div>
+
+
+<div class="project3"><div class="projectnmbr3"><b>08</b></div>
+<img src="http://i68.tinypic.com/rauvit.jpg">
+<div class="projecttxt3"><h3>abstract grid</h3>i don't have an affinity for abstract art unless it's for my own benefit.</div>
+</div>
+
+
+<div class="project2"><div class="projectnmbr2"><b>09</b></div>
+<img src="http://i66.tinypic.com/14n05s7.jpg">
+<div class="projecttxt2"><h3>sentance generator</h3>some of these are funny, most of them probably aren't. i'm not a writer, if you couldn't tell arleady. </div>
+</div>
+
+<div class="project"><div class="projectnmbr"><b>10</b></div>
+<img src="http://i68.tinypic.com/2moxb9l.jpg">
+<div class="projecttxt"><h3>do what?</h3>this is a guide on how to watch the most important video in the world. </div>
+</div>
+
+<div class="project4"><div class="projectnmbr4"><b>11</b></div>
+<table cellspacing="5" cellpadding="0">
+<tr><td><img src="http://i63.tinypic.com/2lwrnzq.jpg"></td><td><img src="http://i68.tinypic.com/o87zps.jpg"></td><td><img src="http://i63.tinypic.com/fkxsv8.jpg"></td></tr></table>
+
+
+<div class="projecttxt4"><h3>website analysis</h3>i had to review three different websites and chose flux hawaii, iolani school, and muscisian aspidistrafly. </div>
+</div>
+
+
+
+
+
+
+
 
 </div>
 
